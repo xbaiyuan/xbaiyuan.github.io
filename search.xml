@@ -4,6 +4,68 @@
   
     
     <entry>
+      <title><![CDATA[<【数据科学基础】4w_Review>]]></title>
+      <url>http://yoursite.com/2016/10/06/data-science-4w-review/</url>
+      <content type="html"><![CDATA[<p>这篇文章是<a href="http://chuansong.me/n/2845162" target="_blank" rel="external">数据科学基础班</a>第四周的Review。</p>
+<blockquote>
+<p>「课程中的阻滞感是经过专门设计的，如果达到课程要求，一周投入12小时，写200行以内的代码，4500字以上的教程输出，任务就能解决。」 By: 课程简介</p>
+</blockquote>
+<p>开智的课程有让人上瘾的法力，我的猜想是：他们的课程设计应用了「必要难度」理论，目的在于：让学生对课程内容记得更牢。课程最开始反复讲基础知识（只需通过「一阶意向」理解），而后在作业上加大难度（需通过「三阶意向」理解）。</p>
+<ul>
+<li>一阶意向eg：我需要借一根铅笔。</li>
+<li>二阶意向eg：我同学知道我想借笔。</li>
+<li>三阶意向eg：我估计我同学已经猜到我需要借笔了。</li>
+</ul>
+<p>从「一阶意向」到「三阶意向」，学生必须跳出认知的舒适圈，去自行寻找各类资料，再熟练地运用基础知识，提高认知复杂度，才能做出作业。</p>
+<p>因此，不管课程变得多难，我必须继续保持学习的节奏感。不管现在的自己多笨拙，仍要每天坚持做输出练习。</p>
+<p>​    </p>
+<h5 id="编程由哪些要素构成"><a href="#编程由哪些要素构成" class="headerlink" title="编程由哪些要素构成"></a>编程由哪些要素构成</h5><p><a href="https://zhuanlan.zhihu.com/p/19959253" target="_blank" rel="external">萧井陌</a>曾谈到：很多人喜欢机器人，却对制作机器人背后的原理毫无兴趣。</p>
+<p>我作为编程小白，也要想清楚这个问题。我要学的，不是一个噱头，而更应该是「什么构成了数据科学」。</p>
+<p>萧井陌认为代码的基本构造是：</p>
+<ul>
+<li>算法: 如何从数列中找出最大值。</li>
+<li>语法：不同编程语言，实现同一个步骤的表达方法也不同。</li>
+<li>系统基础：这段代码为什么运行不起来，在电脑的系统层面有什么问题？</li>
+</ul>
+<p>回顾一下过去四周的课程，才发现肖老师在课程最开始就对数据科学的基本要素进行了解剖。</p>
+<p>因此，数据科学课「每周的最小行动为」：</p>
+<ol>
+<li>熟悉语法：比如Python是如何用循环法计算的，载入numpy模块之后，又是如何用向量法计算的。</li>
+<li>数据分析思维：我想通过数据进行什么样的分析？如何去掉无效信息，如何处理有效信息？</li>
+<li>解题思路：解题的本质是在短期记忆和长期记忆之间建造更多的通路（阳志平）。</li>
+<li>应用工具和模块：通常在做完作业之后，才能更清晰地了解Python的各类模块分别解决了什么问题。所以，学习编程最重要的步骤的确是「做一个具体的项目」。</li>
+</ol>
+<p>我在完成作业后才渐渐了解到代码的魅力：<code>numpy</code> 可以轻松创建多维数组，<code>Panda</code> 可以用简单语法，来对海量数据进行处理，比excel方便太多。而使用<code>matplotlib</code>画图，就 更像人类在真实世界里画图的方法。</p>
+<h3 id="学习方法Review"><a href="#学习方法Review" class="headerlink" title="学习方法Review"></a>学习方法Review</h3><h5 id="元学习"><a href="#元学习" class="headerlink" title="元学习"></a>元学习</h5><p>人和机器的不同之处在于：人类在执行任务时，可以不断觉察自己在做什么，如果做的方法不对，会立即修正，机器却很难做到这一点（人工智能在努力攻克这个问题）。因此除了编程的训练，我也需要每周反思一回「自己是如何学习的」。</p>
+<h5 id="背景知识越多，学得越快"><a href="#背景知识越多，学得越快" class="headerlink" title="背景知识越多，学得越快"></a>背景知识越多，学得越快</h5><p>在<code>数据科学课</code> 和<code>写作课</code> 中，我都意识到：明明上的课都一样，有些同学做的笔记，会让我觉得我从没上过这门课。究其原因，就是背景知识的差异。背景知识越多、基础知识越扎实，学东西就越快，看事情的角度也完全不同。</p>
+<p>比如NBA的保罗通过潜意识计算队友位移，闭着眼都能传球；吴清源一眼就能看出某人是不是棋手，段位几何；UFC的Conor甚至常在赛前预言自己会怎样击垮对手，而且预言基本都实现了。</p>
+<p>故此，现在我除了刻意练习，还需要大量阅读，拓宽基础知识。</p>
+<h5 id="成长型心智"><a href="#成长型心智" class="headerlink" title="成长型心智"></a>成长型心智</h5><p>人们喜欢看比赛，是因为运动员有极强的成长型心智。专业运动员做「刻意练习」时，不会边听音乐边练习，他们会保持激光一般的专注，刻意地去改善自身缺陷。在日常生活里，大多数人只要发挥长处，回避短处就可以活得很好，运动员可不行。</p>
+<p>每个领域都需要成长型心智，但在某一领域擅长此道者，在另一领域常常难以保持这种心智。所以对于退役运动员来说，最大的挑战在于：能否将他们在运动领域的心智，应用到其他领域。</p>
+<p>我作为一个荷尔蒙炸裂、脑子缺根筋的奇男子，过去一直纠结：自己该选择赛事类的工作，还是技术类的工作。现在才发现这些都不重要。重要的是，做了这个选择就拼命坚持到底，在这个过程中，把以前的成长型心智转化到现在在做的事情上就好了。</p>
+<h3 id="关于选择"><a href="#关于选择" class="headerlink" title="关于选择"></a>关于选择</h3><p>接着成长型心智说开，为什么我选择做Programmer？又为何要坚守自己的选择呢？我想在这里借<a href="https://www.youtube.com/watch?v=8GQZuzIdeQQ" target="_blank" rel="external">Ruth Chang</a>和徐皓峰的两段话提醒自己不忘初心：</p>
+<blockquote>
+<p><strong>Ruth Chang</strong>  </p>
+<p>那些不锻炼自己规范性力量的人，会成为”漂流者“。漂流者允许这个世界谱写他们的生命篇章（被拖着走），他们让奖罚机制来决定自己的道路。所以艰难选择教会我们：要审视自己能把身心与精力放到何处，我们究竟追求什么，并且通过「艰难选择」，来成为那种人。</p>
+<p>艰难抉择不是痛苦和恐惧的来源，而是难得的机遇。让我们庆幸人类有如此特殊的选择权利。庆幸我们在这个理性原由会被用尽的世界，我们有能力去为自己创造理由，去成为与众不同的自己。</p>
+<p>这就是为什么，艰难选择不是一种诅咒，而是天赐之物，给生活赋予意义的契机。</p>
+<p><strong>徐皓峰《武士会》</strong></p>
+<p>”禅宗宗旨是——直指人心，见性成佛。对外界的反应为心，支撑反应的力是性。直指，就是打击人的反应，不搞理说论证，痛快淋漓，反应强烈，人会超越反应，体会到反应背后的力，就是见性。“</p>
+<p>”《憨山老人梦游集》上说：性是佛与佛才能见识的东西。“</p>
+<p>”唉！凡人也能见，每个人都见过，当人遭遇巨大冲击，或悲或喜到极点，忽然呈现一个<code>我</code> ，历历孤明——这个瞬间之我，就是性。性是伟力，造天地是它，生万物是它，英雄豪杰打天下靠它，平民百姓遇到难事也靠它。一恨之下，打碎反应，见了我，才能获力，渡过难关。”</p>
+</blockquote>
+<p><strong>Reference</strong></p>
+<p><a href="https://www.youtube.com/watch?v=8GQZuzIdeQQ" target="_blank" rel="external">Ruth Chang: How to make hard choices</a></p>
+<p><a href="https://www.youtube.com/watch?v=VO6XEQIsCoM" target="_blank" rel="external">Barry Schwartz: The paradox of choice</a></p>
+<p>徐皓峰：武士会</p>
+<p>Willingham, D. T. (2009). <em>Why don’t students like school: A cognitive scientist answers questions about how the mind works and what it means for the classroom</em>. John Wiley &amp; Sons.</p>
+<p><a href="https://www.youtube.com/watch?v=W-ONEAcBeTk" target="_blank" rel="external">Angela Duckworth: “Grit: The Power of Passion and Perseverance” | Talks at Google</a></p>
+<p><a href="http://www.yangzhiping.com/files/code/md.css" target="_blank" rel="external">阳志平：Markdown here模板</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/19959253" target="_blank" rel="external">萧井陌：编程入门指南</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[「为什么学生不喜欢上学」读书笔记]]></title>
       <url>http://yoursite.com/2016/07/18/why-students-do-not-like-school-reading-note/</url>
       <content type="html"><![CDATA[<p>查理芒格非常擅长使用逆向思维，他认为，比起思考「如何让印度变好」这个问题，思考「如何让印度变糟」，然后避免「使印度变糟」的种种做法，会更简单、有效。</p>
