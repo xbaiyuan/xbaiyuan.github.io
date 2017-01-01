@@ -1,0 +1,928 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="mind hack," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="这篇文章中我分享了大量卡片，事实上分享卡片是不可取的行为，因为它会让人不断思考，什么卡片应该公布，什么卡片应该只有自己看，浪费了大量时间。卡片和文章，应该是两个层级。
+
+背景介绍Triz理论曾被苏联列为高度机密、严禁外传，因为它揭示了创新的方法论，若流出国外，就等于给拿着柳叶刀攻城略地的敌人，送上一门红衣大炮。
+所以读《创新算法》时，我才意识到读难书的意义：它能让我摆脱自己“原始人”的状态。我一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何阅读一本难啃的书&进化树：技术信息分析及新方案的产生（第1~2章）">
+<meta property="og:url" content="http://yoursite.com/2016/11/13/how-to-read-a-hard-book/index.html">
+<meta property="og:site_name" content="Meditation in Action">
+<meta property="og:description" content="这篇文章中我分享了大量卡片，事实上分享卡片是不可取的行为，因为它会让人不断思考，什么卡片应该公布，什么卡片应该只有自己看，浪费了大量时间。卡片和文章，应该是两个层级。
+
+背景介绍Triz理论曾被苏联列为高度机密、严禁外传，因为它揭示了创新的方法论，若流出国外，就等于给拿着柳叶刀攻城略地的敌人，送上一门红衣大炮。
+所以读《创新算法》时，我才意识到读难书的意义：它能让我摆脱自己“原始人”的状态。我一">
+<meta property="og:updated_time" content="2017-01-01T04:33:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何阅读一本难啃的书&进化树：技术信息分析及新方案的产生（第1~2章）">
+<meta name="twitter:description" content="这篇文章中我分享了大量卡片，事实上分享卡片是不可取的行为，因为它会让人不断思考，什么卡片应该公布，什么卡片应该只有自己看，浪费了大量时间。卡片和文章，应该是两个层级。
+
+背景介绍Triz理论曾被苏联列为高度机密、严禁外传，因为它揭示了创新的方法论，若流出国外，就等于给拿着柳叶刀攻城略地的敌人，送上一门红衣大炮。
+所以读《创新算法》时，我才意识到读难书的意义：它能让我摆脱自己“原始人”的状态。我一">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: undefined,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/13/how-to-read-a-hard-book/"/>
+
+  <title> 如何阅读一本难啃的书&进化树：技术信息分析及新方案的产生（第1~2章） | Meditation in Action </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Meditation in Action</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                如何阅读一本难啃的书&进化树：技术信息分析及新方案的产生（第1~2章）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-13T12:28:09+08:00" content="2016-11-13">
+              2016-11-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/mind-hack/" itemprop="url" rel="index">
+                    <span itemprop="name">mind hack</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>这篇文章中我分享了大量卡片，事实上分享卡片是不可取的行为，因为它会让人不断思考，什么卡片应该公布，什么卡片应该只有自己看，浪费了大量时间。卡片和文章，应该是两个层级。</p>
+</blockquote>
+<h2 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h2><p>Triz理论曾被苏联列为高度机密、严禁外传，因为它揭示了创新的方法论，若流出国外，就等于给拿着柳叶刀攻城略地的敌人，送上一门红衣大炮。</p>
+<p>所以读《创新算法》时，我才意识到<strong>读难书的意义</strong>：它能让我摆脱自己“原始人”的状态。我一直是发自内心地觉得自己什么都不懂，读了这本神作后，才稍微成长了一点点。</p>
+<p>难书的精华有两种：反常识的证据和高阶模型，学到这两样东西有什么意义呢？</p>
+<p>反常识的证据通常是科学家花费了大量金钱和时间研究出的成果。比如人类总是低估自己十年后会发生的变化（性格、喜好、职业生涯），因此常常活在过去的阴影中。如果不知道这个证据，你会常常责怪自己：我怎么变了？约翰•列侬的狂热的歌迷，也是因为不知道这个证据，一枪毙了一代奇才，还一脸嫌弃地说：你变了。</p>
+<p>高阶模型的意义，就像阳老师所说的：在不同的维度上，分析对象的模型会发生不对称的变形，比如分子学和天体物理，这两门学科使用的是不同的模型，而高阶模型的意义在于，可以击穿这种变形，通用于各个维度上。比如牛顿的运动定律，可以适用于很多个维度，这件事情太美了。芒格的智慧，也是来自他的知识体系和两百多个高阶模型。</p>
+<p>《进化树》这本书，是《创新算法》作者、Triz创始人阿奇舒勒的学生尼古拉写的。他们写作手法稍有不同：阿奇舒勒在解释一个高阶模型前，会先回顾整个人类创新史走过怎样的弯路，才发现这个模型，这种方式能让读者清楚地意识到这个模型所处的高度和价值，因为人类喜欢听时间跨度长的故事。而尼古拉很少讲段子，常常直接切入理论，再讲这个理论可以应用在什么地方。</p>
+<h2 id="读难书的原则"><a href="#读难书的原则" class="headerlink" title="读难书的原则"></a>读难书的原则</h2><p>我过去总用错误的方法读经典之作，所以现在开始积累一些原则，避免再度走入误区：</p>
+<ul>
+<li><strong>以章节为单位进行深度阅读</strong>：由于书的信息量过大，一次看一本，会贪多嚼不烂。</li>
+<li><strong>阅读前，了解书的背景知识</strong>：认知科学研究者一直强调，背景知识对学习者的学习速度影响非常大。比如《进化树》中有一句“整理完解决方案后，关注哪些方案可以解决系统内部矛盾，改善原型。”这句话中的“技术矛盾”，在《创新算法》中用了很大篇幅来谈，但《进化树》只是一笔带过。</li>
+<li><strong>读书前先放下自己已有的知识体系</strong>：过度依赖已有知识体系去解释高阶模型，会造成认知偏差：自以为懂了，其实完全不懂，甚至会误读、曲解作者的本意。读一本难书，一定要进入作者的话语体系。和优秀的人交往也是同理，如果对方的知识储备比我高出N个数量级，我是无法用自己的世界观去解读他的，只能倾听。</li>
+<li><strong>为了内化高阶模型，要把作者试图解决的问题放入脑海不停思索，并在脑中模拟作者解决问题的思路</strong>，富兰克林就经常使用这个方法。在理解了作者的思路后，再使用费曼方法，向别人解释这个问题是如何解决的。研究指出，即便你只是假象自己在教别人，也会使理解力提高两倍。</li>
+<li><strong>不要只记得作者的名言，要努力理解作者是如何做推论的</strong>。知识分为两种：爱因斯坦知识和司机知识。爱因斯坦的司机可以代替爱因斯坦去演讲，复述爱因斯坦的话，却不理解其中的原理是如何推论出来的。所以读经典作品时，一定要付出巨大的认知努力，试图理解作者是如何做出推论的。</li>
+<li><strong>不懂的地方，运用比喻的手法来理解</strong>：需要注意的是，这个比方不能是非常浅薄的比方，就好比我们无法用一个粗俗的例子理解相对论。</li>
+<li>将知识化为行动指南，并列出清单。**比如看完叙事传输的相关论文，就给自己列一个写作清单，写完文章后对照清单进行修改。也可以把重要的知识点和领悟记录到Anki里，背下来，彻底内化。</li>
+<li><strong>完成输入-输出的闭环</strong>，在理解了这本书的难点之后，写读书笔记，或者把这个理论像智慧积木一样攒在脑子里，等现实生活中有问题出现时，试着用这积木去解决这个问题。</li>
+</ul>
+<p>接下来的读书笔记，是按照开智部落的卡片格式来做的，把知识点切割成，可以更好地记忆知识点，我一般会把大家做的卡片整理到Anki里，直接背下来，这样就省去了自己做卡片的步骤。开智部落在“可供性”（用户可以输出什么，以什么格式输出，就像微信允许你输出特定格式的朋友圈）这一点上，做的太棒了。如果你有兴趣，也可以直接把我的卡片整理到Anki里。</p>
+<h2 id="术语卡"><a href="#术语卡" class="headerlink" title="术语卡"></a>术语卡</h2><ul>
+<li><p>术语：信息结构模型</p>
+</li>
+<li><p>印象：信息结构模型的构建，是寻找创新方案最重要的一步。如果创新方案是蜂蜜，那信息结构模型就是蜜蜂。我们作为养蜂人，第一步要做的就是寻找优质的“蜜蜂”。当信息结构模型足够完整、富有逻辑性的时候，好的方案自然会诞生。</p>
+</li>
+<li><p>例子:</p>
+<p>  构建信息结构模型的详细过程为。</p>
+<ol>
+<li>明确创新方案，要解决的是什么问题。考虑问题相关的所有细节和可以改善的方向。</li>
+<li>搜索资料，这时的资料是数量很大，未经分析。</li>
+<li>给资料分类，组建<u>便于分析的信息结构模型</u>。</li>
+<li>评价模型是否完整。<ul>
+<li>如果完整，进入下一步：方案汇总阶段。</li>
+<li>如果不完整，返回上一步：完善信息结构模型，否则就像找到劣质蜜蜂，产不出好蜜。</li>
+</ul>
+</li>
+<li>在模型中整理可用方案，创新方案就是在这一步产生的。方案不够多、不够好时，回到第2步确认：搜集资料时找到的方案是否全面？<ul>
+<li>决定是否需要回到第二步的标准：信息组织结构中，有没有空位。</li>
+</ul>
+</li>
+<li>整理完创新方案后，关注哪些方案可以<strong>解决系统内部矛盾</strong>，改善原型的方案。（注：高阶发明最重要的问题之一就是，是否解决了系统内部矛盾。详情参见创新算法第一章第六节）   </li>
+</ol>
+</li>
+</ul>
+<h2 id="反常识卡"><a href="#反常识卡" class="headerlink" title="反常识卡"></a>反常识卡</h2><p>有了互联网之后，通过搜索关键词，可以很快搜到需要的资料，但获取信息再多也没有用。重点是，我们如何处理这些信息？就像芒格他有自己的知识框架，可以不断将新知识整理到自己的框架中。</p>
+<p>因此，创造的要点是建立信息结构模型，就像学习的要点是建立知识体系。</p>
+<p>信息结构模型的意义是什么？</p>
+<blockquote>
+<p>在最有效的模型中，你可以看见模型内所有的主要已知方案。你甚至可以通过给这个模型查漏补缺，而找到暂时还不存在的技术方案。</p>
+</blockquote>
+<h2 id="行动卡"><a href="#行动卡" class="headerlink" title="行动卡"></a>行动卡</h2><p>在搜索到的信息面前，我们需要问自己：如何找到一种有效的分类方法，高效分析专利搜索得到的信息。</p>
+<p>最好的技术系统分类标准是：系统用途、主要有用功能。</p>
+<p>比如：轿车、刷子、刮铲铅笔、圆珠笔、小面包车。如果根据功能来分类：</p>
+<ul>
+<li>清洁表面：刷子、刮铲。</li>
+<li>运输货物和乘客。</li>
+<li>在表面上留下痕迹：铅笔、圆珠笔。</li>
+</ul>
+<p>但根据功能来进行分类的原则，在给功能相同的一系列产品进行分类时是行不通的。因此，我们<strong>不能单纯地按照用途、功能来分类。那么，哪一种技术信息分类方式是最佳的呢</strong>？这没有固定的答案，比起唯一的答案，<u>我们更应该思考这种分类方式是否符合下列要求</u>，然后在满足要求的基础上，完善分类方式：</p>
+<ul>
+<li><p>分类应基于客观标准（客观性要求）。</p>
+</li>
+<li><p>应考虑到所有已存在的各种系统（完整性要求）。</p>
+</li>
+<li><p>分类方法应适用于所有的技术系统，同时也用于描述某一个具体的技术系统（通用性和具体性要求）。</p>
+</li>
+<li><p>能直观地表达信息，并应给出专利搜寻过程中找到的信息库中的空白处（直观性要求）。</p>
+</li>
+<li><p>信息结构模型应包含暂不存在的信息单元的数据，便于得到实际可行的概念方案（信息性要求）。</p>
+<p>​</p>
+</li>
+</ul>
+<h2 id="技巧卡1"><a href="#技巧卡1" class="headerlink" title="技巧卡1"></a>技巧卡1</h2><p>分析每一个技术系统组件的发展过程，都可以建立类似的进化路线。而且我们很快会明白，进化路线本身没有等级之分。我们不知道哪些路线占主导地位，哪些占从属地位。</p>
+<p>虽然如此，进化路线仍然可以帮助我们寻找解决实际问题的思路。</p>
+<h2 id="技巧卡2"><a href="#技巧卡2" class="headerlink" title="技巧卡2"></a>技巧卡2</h2><p>改善系统的三步法</p>
+<p>阿奇舒勒指出，每一次改善系统时，为了得到具有新工作能力的功能技术系统，系统新方案分阶段地满足以下三个条件：</p>
+<ul>
+<li>确保系统的组成部分与其完成的功能相符合。</li>
+<li>确定系统各组件间的作用。</li>
+<li>技术系统子系统作用与参数的协调。</li>
+</ul>
+<p>我们可以拿iPhone作为案例来参考，iPhone在开发的每一个阶段，都需要积累和组织那个阶段的功能所需的资源。随着系统存在条件的逐渐满足，系统内相互作用的各部分参数和工作状态的协调性也在不断提高。最终使执行装置与加工物体间完全协调（比如按压屏幕轻重程度<u>是执行装置</u>，App给出的菜单选项<u>是加工物体</u>，那么按压的轻重和App弹出的菜单，就是我们需要协调的），使系统与外界环境更加协调（比如iPhone的相机在软件的算法上做完调整后，会排出更好的照片；另一个例子是，取消耳机插孔之后，iPhone面对外界的防水性能也提高了，这也是一种协调）。</p>
+<h3 id="第一节：信息处理"><a href="#第一节：信息处理" class="headerlink" title="第一节：信息处理"></a>第一节：信息处理</h3><p>为了解决一个问题，我们常常要收集信息，这次我们最好有一个信息结构模型，它会有助于预测系统的未来发展。</p>
+<ul>
+<li>信息结构模型，分为汇总，和分析，通过汇总和分析</li>
+<li>考虑问题相关的所有细节，和可以改善的方向。</li>
+<li>开始搜索资料，这时的资料是数量很大，未经分析。</li>
+<li>将信息进行分类，组建成一个便于分析的信息结构模型。</li>
+<li>评价这个信息结构模型是否完整。<ul>
+<li>如果完整，进入下一步：方案汇总阶段。</li>
+<li>如果不完整，返回上一步：进一步明确信息组织结构。因为只有通过分析完整，符合逻辑的信息结构模型，才能得到有效的新技术方案。所以只完成分析-汇总这个过程是不够的，必须要不断确认信息结构模型是否足够好。</li>
+</ul>
+</li>
+<li>开始整理概念方案，这里要确认：搜集阶段可能的方案是否全部被找到了？<ul>
+<li>确认的方法：信息组织结构中，有没有空位。</li>
+</ul>
+</li>
+<li>整理完概念方案之后，关注哪些方案是可以解决系统内部矛盾，改善原型的方案。</li>
+</ul>
+<p>回顾这个循环，最重要的一部分，就是信息结构模型的构建，这就好像养蜂人关注的是生产蜜蜂，而非蜂蜜。同样的，信息结构模型足够完整、富有逻辑性的时候，预测结果自然就会诞生。或者用武术和搏击来比喻，在训练起始阶段，最重要的是姿态的训练，姿态符合力学原理之后，才能进行下一步训练。</p>
+<p>第二节 最佳信息结构模型的构建要求</p>
+<p>有了互联网之后，通过搜索关键词，可以很快搜到需要的资料，但问题是，怎么处理这些信息？关键问题在于，缺少组合和分类技术信息、专利信息的有效办法。</p>
+<p>所以我们需要问自己：如何找到一种有效的分类方法，高效分析专利搜索得到的信息。</p>
+<p>最有成效的信息结构是能够通过它一眼看出该技术系统所有的主要已知方案。甚至有可能给出可能的、暂时还不存在的技术方案。</p>
+<p>最好的技术系统分类标准是：系统用途、主要有用功能。</p>
+<p>比如：轿车、刷子、刮铲铅笔、圆珠笔、小面包车。根据它们的主要功能可以分为：</p>
+<ul>
+<li>清洁表面：刷子、刮铲。</li>
+<li>运输货物和乘客。</li>
+<li>在表面上留下痕迹：铅笔、圆珠笔。</li>
+</ul>
+<p>尽管针对功能不同的专利信息而言，按照功能分没有问题，但针对同一类技术系统的不同技术方案，就不能这么分了。（比如有一百种刷子，怎么分类？）</p>
+<p>如果专利分类不清晰，就很难找到需要的专利。所以再次重申，最佳的信息结构模型是寻找新概念方案和技术方案的关键。</p>
+<p>那么哪一种信息结构是最佳的呢？</p>
+<p>为了回答这个问题，首先需要一个”技术信息分类要求“，它应该符合「客观」、「完整」、「通用性和具体性 」、「直观」、「信息性」：</p>
+<ul>
+<li><p>分类应基于客观标准（客观性要求）。</p>
+</li>
+<li><p>应考虑到所有已存在的各种系统（完整性要求）。</p>
+</li>
+<li><p>分类方法应适用于所有的技术系统，同时也用于描述某一个具体的技术系统（通用性和具体性要求）。</p>
+</li>
+<li><p>能直观地表达信息，并应给出专利搜寻过程中找到的信息库中的空白处（直观性要求）。</p>
+</li>
+<li><p>信息结构模型应包含暂不存在的信息单元的数据，便于得到实际可行的概念方案（信息性要求）。</p>
+<p>​</p>
+</li>
+</ul>
+<h3 id="第二章-客观的进化路线"><a href="#第二章-客观的进化路线" class="headerlink" title="第二章 客观的进化路线"></a>第二章 客观的进化路线</h3><p><strong>进化路线</strong></p>
+<p>进化路线是趋势的具体化，是某组件或者某过程发展的规律。进化路线不仅是发展的方向，而且是详细发展的路线，指出了技术系统或组件变换的标志性方案。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mind-hack/" rel="tag">#mind hack</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/12/note-different-creative-model/" rel="next" title="【笔记】莎士比亚、牛顿和贝多芬：不同的创造模式">
+                <i class="fa fa-chevron-left"></i> 【笔记】莎士比亚、牛顿和贝多芬：不同的创造模式
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/11/13/review_end_of_data_science/" rel="prev" title="【回顾】数据科学基础班结业">
+                【回顾】数据科学基础班结业 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="柳白猿" />
+          <p class="site-author-name" itemprop="name">柳白猿</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/xbaiyuan" target="_blank" title="Github">
+                  
+                  Github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/chenbaiyuan/" target="_blank" title="豆瓣">
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/liubaiyuan" target="_blank" title="知乎">
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.quora.com/profile/Bob-Chen-16/blogs" target="_blank" title="Quora">
+                  
+                  Quora
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/liubaiyuan" target="_blank" title="Twitter">
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/fangzhang007" target="_blank" title="微博">
+                  
+                  微博
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景介绍"><span class="nav-number">1.</span> <span class="nav-text">背景介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#读难书的原则"><span class="nav-number">2.</span> <span class="nav-text">读难书的原则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#术语卡"><span class="nav-number">3.</span> <span class="nav-text">术语卡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反常识卡"><span class="nav-number">4.</span> <span class="nav-text">反常识卡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行动卡"><span class="nav-number">5.</span> <span class="nav-text">行动卡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技巧卡1"><span class="nav-number">6.</span> <span class="nav-text">技巧卡1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技巧卡2"><span class="nav-number">7.</span> <span class="nav-text">技巧卡2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一节：信息处理"><span class="nav-number">7.1.</span> <span class="nav-text">第一节：信息处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二章-客观的进化路线"><span class="nav-number">7.2.</span> <span class="nav-text">第二章 客观的进化路线</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">柳白猿</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+
+</body>
+</html>
